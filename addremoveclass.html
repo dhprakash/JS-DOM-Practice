@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+
+        
+       
+
+
+        .dbvc{
+             width:90%;
+             padding:10px 0px 10px 0px;
+             color:#000;
+             background:#fff;
+             box-shadow:1px 5px 8px #f6ecec;
+             margin-left:5%;
+             margin-right:-5%;
+        }
+        .clck{
+
+            background-color:#000;
+            color:#fff;
+            padding:10px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <button onclick="clckk()">click</button>
+
+
+    <div class="dbvc" id="dbc">gg</div>
+    
+
+    <script>
+
+        function clckk() {
+
+            var d = document.getElementById('dbc');
+            d.innerHTML = "hello";
+            if (d.classList.contains('clck'))
+            {
+                d.classList.remove("clck");
+            }
+            else {
+               
+                d.classList.add("clck");
+            }
+
+        }
+
+
+
+       
+
+    </script>
+
+     
+</body>
+</html>
