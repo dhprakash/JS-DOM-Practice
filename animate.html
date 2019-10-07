@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<title>animate</title>
+<style>
+.design{ width:250px; height:250px; background:#c2c2c2; position:absolute;}
+</style>
+</head>
+<body>
+<div class="design" id="dvanimate"></div>
+<script>
+var left=0,right=500,bottom=500,topp=0;
+var a=0;
+var data= document.getElementById("dvanimate");
+window.onload=setInterval(()=>{
+if(a<=500)
+{
+a=a+10;
+data.style.left=left+"px";
+left=left+10;
+console.log(a);
+}
+else if(a<=1000)
+{
+a=a+10;
+data.style.top=topp+"px";
+topp=topp+10;
+console.log(a);
+}
+
+else if(a<=1500)
+{
+a=a+10;
+data.style.left=right+"px";
+right=right-10;
+console.log(a);
+}
+
+else if(a<=2000)
+{
+a=a+10;
+data.style.top=bottom+"px";
+bottom=bottom-10;
+console.log(a);
+}
+},30);
+
+var keycod = event.keyCode;
+console.log(keycod);
+//onkeyup(keyCode)=setTimeout(()=>{
+//clearInterval(data);
+
+//},10)
+
+
+/*
+setInterval(function(){
+console.log("abhishek");
+},500);
+*/
+</script>
+</body>
+</html>
